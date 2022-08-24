@@ -4,23 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>SEARCH PROJECT</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h4 class="title">Live User Filter</h4>
+<!-- Navbar Here -->
+<nav class="navbar">
+  <div class="navbar-content">
+     <a href="#" class="logo">Faith</a>
 
-            <small class="subtitle">Search by name or location</small>
-            <input type="text" id="filter" placeholder="search">
-        </header>
-        <ul id="result" class="user-list">
-            <li>
-                <h3>Loading...</h3>
-            </li>
-        </ul>
-    </div>
+  <div class="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+
+  </div>
+ <button class="show hide">x</button>
+  </div>
+
+
+  <ul class="nav__link hide">
+      <a href="#">home</a>
+      <a href="#">home</a>
+      <a href="#">home</a>
+      <a href="#">home</a>
+  </ul>
+
+</nav>
+
+    <!---Search filter -------------->
+
+    <div class="container">
+    <header class="header">
+     <h4 class="title">Live User Filter</h4>
+     <small class="subtitle">Search by name and/or location</small>
+     <input type="text" id="filter" placeholder="Search">
+    </header>
+    <ul id="result" class="user-list">
+     <li>
+      <h3>Loading...</h3>
+     </li>
+    </ul>
+   </div>
+
+<!---------------timeline section ----------->
+<section>
+
+    <div class="timeline">
+        <div class="timeline__component">
+             <div class="timeline__date timeline__date--right">2014</div>
+        </div>
+        <div class="timeline__middle">
+            <div class="timeline__point"></div>
+        </div>
+  <div class="timeline__component timeline__component--bg">
+   <h2 class="timeline__title">HISTORY</h2>
+   <p class="timeline__paragraph">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Reiciendis autem aliquam repudiandae libero obcaecati
+    optio molestias quibusdam quidem ea,
+     consequuntur ipsum cum architecto eligendi consequatur,
+    illum praesentium dolorum animi nesciunt?
+   </p>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+   <h2 class="timeline__title">EDUCATIONAL BACKGROUND</h2>
+   <p class="timeline__paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Reiciendis autem aliquam repudiandae libero obcaecati
+    optio molestias quibusdam quidem ea,
+     consequuntur ipsum cum architecto eligendi consequatur,
+    illum praesentium dolorum animi nesciunt?
+   </p>
+  </div>
+  <div class="timeline__middle">
+   <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component">
+  </div>
+  <div class="timeline__component">
+   <div class="timeline__date timeline__date--right">2017</div>
+  </div>
+  <div class="timeline__middle">
+   <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+   <h2 class="timeline__title">EDUCATIONAL BACKGROUND</h2>
+   <p class="timeline__paragraph">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Reiciendis autem aliquam repudiandae libero obcaecati
+    optio molestias quibusdam quidem ea,
+     consequuntur ipsum cum architecto eligendi consequatur,
+    illum praesentium dolorum animi nesciunt?
+   </p>
+  </div>
+  <div class="timeline__component timeline__component--bottom timeline__component--bg">
+   <h2 class="timeline__title">EDUCATIONAL BACKGROUND</h2>
+   <p class="timeline__paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Reiciendis autem aliquam repudiandae libero obcaecati
+    optio molestias quibusdam quidem ea,
+     consequuntur ipsum cum architecto eligendi consequatur,
+    illum praesentium dolorum animi nesciunt?
+   </p>
+  </div>
+  <div class="timeline__middle">
+   <div class="timeline__point"></div>
+   <!-- <div class="timeline__point timeline__point--bottom"></div> -->
+  </div>
+  <div class="timeline__component timeline__component--bottom">
+   <div class="timeline__date">2021</div>
+  </div>
+ </div>
+</section>
+
     <script src="app.js"></script>
 </body>
 </html>

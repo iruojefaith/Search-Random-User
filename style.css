@@ -9,14 +9,86 @@
 body {
  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  height: 100vh;
+  height: 100%;
   background-image: #f8f9fd;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
+/*==================== HAMBER BURGER  STYLING============ */
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar{
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.hamburger {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: #833ab4;
+}
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+.hide {
+  display: none;
+}
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+  .nav__link a{
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .show {
+    display: block;
+    font-size: 10rem;
+  }
+}
+
+/*==================== SEARCH BOX STYLING============ */
 .container {
     border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -34,7 +106,7 @@ body {
 
 .header{
     color: #fff;
-    background-color: #3e57db;
+    background-color: #833ab4;
     padding: 30px 20px;
 }
 .header input {
@@ -82,3 +154,66 @@ body {
 .user-list li.hide {
     display: none;
 }
+
+
+/*=======================  TIMELINE STYLING =================*/
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #777777;
+ }
+ .timeline__component {
+  margin: 0 20px 20px 20px;
+ }
+ .timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 3px #833ab4;
+  border-radius: 10px;
+ }
+ /* LEAVE TILL LAST */
+ .timeline__component--bottom {
+  margin-bottom: 0;
+ }
+ .timeline__middle {
+  position: relative;
+  background: #d6d6d6;
+ }
+ .timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #833ab4;
+  border-radius: 50%;
+ }
+ /* LEAVE TILL LAST */
+ .timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+ }
+ .timeline__date--right {
+  text-align: right;
+  color: #833ab4;
+ }
+ .timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #391472;
+ }
+ .timeline__paragraph {
+  line-height: 1.5;
+ }
+ .timeline__date {
+  color: #833ab4;
+ }
+ .titol {
+  font-style: italic;
+ }
