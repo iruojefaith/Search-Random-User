@@ -18,6 +18,9 @@ body {
 }
 
 /*==================== HAMBER BURGER  STYLING============ */
+.show-sidebar {
+	transform: translate(0);
+}
 
 a{
   text-decoration: none;
@@ -27,65 +30,11 @@ a{
   text-transform: uppercase;
 }
 
-.navbar{
-  display: flex;
-  justify-self: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
 
-.hamburger {
-  padding-right: 30px;
-  cursor: pointer;
-}
 
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #000;
-}
-.nav__link {
-  position: fixed;
-  width: 94%;
-  top: 5rem;
-  left: 18px;
-  background-color: #833ab4;
-}
-.nav__link a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-.hide {
-  display: none;
-}
-.navbar-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 @media screen and (min-width: 600px) {
 
-  .nav__link {
-    display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-  }
-  .nav__link a{
-    display: inline-block;
-    padding: 15px 20px;
-  }
-  .hamburger {
-    display: none;
-  }
-  .show {
-    display: block;
-    font-size: 10rem;
-  }
+
 }
 
 /*==================== SEARCH BOX STYLING============ */

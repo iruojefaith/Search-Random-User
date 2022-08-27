@@ -1,14 +1,16 @@
 
  //HAMBURGER MENU
-const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector('.nav__link');
-const closeBtn = document.querySelector('button');
+const toggleBtn = document.querySelector('sidebar-toggle');
+const sidebar = document.querySelector('.sidebar');
+const closeBtn = document.querySelector('.close-btn');
 
-hamburger.addEventListener('click', () => {
-  navLink.classList.toggle('hide');
-  hamburger.classList.toggle('hide');
-  closeBtn.classList.remove('hide');
-
+toggleBtn.addEventListener('click', () => {
+  if (sidebar.classList.contains("sidebar-toggle")) {
+    sidebar.classList.remove("show-sidebar");
+  }
+  else {
+    sidebar.classList.add("show-sidebar");
+  }
 });
 
 closeBtn.addEventListener('click', function () {
@@ -18,7 +20,7 @@ closeBtn.addEventListener('click', function () {
 })
 
 
-
+ //Filter SEARCH
 
 const result = document.getElementById('result')
  const filter = document.getElementById('filter')
