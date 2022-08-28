@@ -4,60 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+     <!-- styles -->
     <link rel="stylesheet" href="style.css">
     <title>SEARCH PROJECT</title>
 </head>
 <body>
 <!-- Navbar Here -->
-<button class="sidebar-toggle">
-  <i class="fas fa-bars"></i>
-  <aside class="sidebar show-side">
-    <div class="sidebar-header">
-      <img src="" alt="" class="logo">
-      <button class="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-      <ul>
+  <nav>
+    <div class="navbar__content ">
+      <h3>Diruoje</h3>
+       <!-- links -->
+      <ul class="links ul-bigscreen">
         <li>
-          <a href="">
-            Home
-          </a>
+          <a href="index.html">home</a>
         </li>
         <li>
-          <a href="">
-            About
-          </a>
+          <a href="about.html">about</a>
         </li>
         <li>
-          <a href="">
-            Projects
-          </a>
+          <a href="projects.html">projects</a>
         </li>
         <li>
-          <a href="">
-            Contact
-          </a>
+          <a href="contact.html">contact</a>
         </li>
       </ul>
     </div>
-  </aside>
-</button>
-<!-------------------- Navbar END Here ------------------->
-    <!---Search filter -------------->
 
-    <div class="container">
-    <header class="header">
-     <h4 class="title">Live User Filter</h4>
-     <small class="subtitle">Search by name and/or location</small>
-     <input type="text" id="filter" placeholder="Search">
-    </header>
-    <ul id="result" class="user-list">
-     <li>
-      <h3>Loading...</h3>
-     </li>
-    </ul>
-   </div>
+    <!--------===========MOBILE VIEW==============----------->
+    <div class="mobile__navbar-content">
+      <h2>Diruoje</h2>
+      <button class="sidebar-toggle ">
+        <i class="fas fa-bars"></i>
+    </button>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Diruoje</h2>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html">about</a>
+        </li>
+        <li>
+          <a href="projects.html">projects</a>
+        </li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-sketch"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+  </nav>
 
 <!---------------timeline section ----------->
 <section>
